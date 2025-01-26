@@ -1,12 +1,253 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Data Types in JS</title>
-    <link rel="stylesheet" href="/assets/css/style.css" />
-  </head>
-  <body>
-    <section class="container"></section>
-  </body>
-</html>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Data Types in JS</title>
+      <link rel="stylesheet" href="/assets/css/style.css" />
+    </head>
+    <body>
+      <section class="hero-section">
+        <h1 class="heading">JS এর ডাটা টাইপ</h1>
+        <div class="container">
+          <div class="box">
+            <h2>Data কি?</h2>
+            <p>
+              ডাটা হলো যে কোনো ধরনের তথ্য যা একটি প্রোগ্রামে সংরক্ষণ,
+              প্রক্রিয়াকরণ বা পরিচালনা করা যায়। যেমনঃ মানুষের নাম, জন্ম তারিখ,
+              বয়স, মোবাইল নাম্বার এগুলো প্রতিটি একেকটি ডাটা।
+            </p>
+          </div>
+          <div class="box">
+            <h2>Data Types বলতে কি বুঝি?</h2>
+            <p>
+              মানুষের নাম, জন্ম তারিখ, বয়স এগুলো ভিন্ন ভিন্ন ধরনের ডাটা। এই ভিন্ন
+              ধরনের ডাটাগুলোকে বোঝার সুবিধার্থে বিভিন্ন ধাপে বিভক্ত করা হয়ে থাকে।
+              <br />
+              <br />
+              মূলত জাভাস্ক্রিপ্টে ২ ধরনের ডাটা টাইপ রয়েছে।
+              <hr>
+              <ol>
+                <li>প্রিমিটিভ ডাটা টাইপ
+                  (Primitive Data Type)</li>
+                <li>নন-প্রিমিটিভ ডাটা টাইপ (Non-Primitive Data Type) </li>
+              </ol>
+            </p>
+          </div>
+          <div class="box">
+            <h3>Primitive Data Type
+            </h3>
+            
+            <p>প্রিমিটিভ ডাটা টাইপ হলো জাভাস্ক্রিপ্টের এমন ডাটা টাইপ, যা অবিভাজ্য এবং সরল। এ ধরনের ডাটা টাইপের মান অপরিবর্তনীয় (immutable), অর্থাৎ মান পরিবর্তন করা সম্ভব নয়। প্রিমিটিভ ডাটা টাইপ সরাসরি ভ্যালু ধারণ করে।
+            <br> <br>
+            এগুলো বেশ কয়েক প্রকারের হয়ে থাকে। যেমনঃ 
+            <ol> 
+              <li>String </li>
+              <li>Number</li>
+              <li>Boolean</li>
+              <li>Undefined</li>
+              <li>Null</li>
+              <li>Symbol</li>
+              <li>BigInt</li>
+            </ol>
+            </p>
+            <br> <br>
+            <hr>
+            <br> <br>
+            <h3>Non-Primitive Data Type</h3>
+            <p>নন-প্রিমিটিভ ডাটা টাইপ হলো জাভাস্ক্রিপ্টের এমন ডাটা টাইপ, যা অবজেক্ট-ভিত্তিক এবং জটিল ডাটা ধারণ করে। এ ধরনের ডাটা টাইপে ভ্যালু সরাসরি সংরক্ষণ করা হয় না; বরং একটি রেফারেন্স সংরক্ষণ করা হয়। এটি মিউটেবল (mutable), অর্থাৎ এর ডাটা পরিবর্তন করা যায়।
+              <br> <br>
+              এগুলো বেশ কয়েক প্রকারের হয়ে থাকে। যেমনঃ 
+              <ol> 
+                <li>Object</li>
+                <li>Array</li>
+                <li>Function</li>
+                <li>Map</li>
+                <li>Set</li>
+              </ol>
+              </p>
+          </div>
+        </div>
+      </section>
+      <section class=" hero-section">
+      <div class="container">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="3">Primitive Data Type</th></tr>
+              <tr>
+                  <th>Data Type</th>
+                  <th>Description</th>
+                  <th>Example</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>String</td>
+                  <td>টেক্সট বা বর্ণমালার ডাটা উপস্থাপন করে। এটি পরিবর্তন করা যায় না, কিন্তু নতুন string তৈরি করা যায়</td>
+                  <td>"Hello RRF January 2025 Batch"</td>
+              </tr>
+              <tr>
+                  <td>Number</td>
+                  <td>Number বলতে সংখ্যাসূচক ডাটা বুঝায়। এটি এক ধরণের পূর্ণসংখ্যা (integer) অথবা দশমিক (float) সংখ্যা ।</td>
+                  <td>৪২, ৩.১৪</td>
+              </tr>
+              <tr>
+                  <td>Boolean</td>
+                  <td>কেবল মাত্র দুইটি মান বা value ব্যবহার করে। এগুলোকে "true" এবং "false" দ্বারা প্রকাশ করা হয়।</td>
+                  <td>true, false</td>
+              </tr>
+              <tr>
+                  <td>Undefined</td>
+                  <td>কোনো ভেরিয়েবল নির্ধারণ করা হয়েছে কিন্তু কোনো মান দেওয়া হয়নি, এরকম থাকলে তাকে আনডিফাইন্ড বলে।</td>
+                  <td>let x; // x এর মান undefined</td>
+              </tr>
+              <tr>
+                  <td>Null</td>
+                  <td>ইচ্ছাকৃতভাবে কোনো মান অনুপস্থিত দেখায় বা শূন্য মান নির্দেশ করে।</td>
+                  <td>let y= null;</td>
+              </tr>
+            
+              <tr>
+                  <td>Symbol</td>
+                  <td>একটি একক মান (unque) তৈরি করতে ব্যবহৃত হয়। </td>
+                  <td>Symbol("id")</td>
+              </tr>
+              <tr>
+                  <td>BigInt</td>
+                  <td>BigInt হলো জাভাস্ক্রিপ্টে একটি ডাটা টাইপ, যা খুব বড় সংখ্যাকে সঠিকভাবে উপস্থাপন করতে এবং পরিচালনা করতে ব্যবহৃত হয়। জাভাস্ক্রিপ্টের Number টাইপ সাধারণত 2^53-1 (যা প্রায় 9000 ট্রিলিয়ন) পর্যন্ত সঠিকভাবে কাজ করতে পারে। এর বেশি সংখ্যার জন্য BigInt ব্যবহার করা হয়।  
+                  </td>
+                  <td>let bigNumber = 9007199254740991n; </td>
+              </tr>
+          </tbody>
+      </table>
+        <table class="table-2">
+          <thead>
+            <tr>
+              <th colspan="3">Non-Primitive Data Type</th></tr>
+              <tr>
+                  <th>Data Type</th>
+                  <th>Description</th>
+                  <th>Example</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Object</td>
+                  <td>Object হলো একটি ডাটা টাইপ যা একাধিক মান ধারণ করতে পারে। এখানে প্রত্যেকটি মান একটি key বা property দিয়ে চিহ্নিত করা হয়।</td>
+                  <td>let person = { name: "Rahim", age: 40 }; <br> <br>
+                  এখানে naem ও age হলো key.
+                  </td>
+              </tr>
+              <tr>
+                  <td>Array
+                    </td>
+                  <td>একটি লিস্ট বা ডাটাসেট, যেখানে একই জিনিসের একাধিক একাধিক ভ্যালু রাখা যায়।</td>
+                  <td>let fruits = ["apple", "banana", "cherry"];</td>
+              </tr>
+              <tr>
+                  <td>Function
+                    </td>
+                  <td>একটি কোড ব্লক, যা নির্দিষ্ট কাজ সম্পাদন করে। এটি নিজেও একটি অবজেক্ট। প্রয়োজনে এটিকে call করে ব্যবহার করা যায়।</td>
+                  <td>function greet() {
+                    console.log("Hello!");
+                }</td>
+              </tr>
+              <tr>
+                  <td>Map
+                  </td>
+                  <td>Map হলো জাভাস্ক্রিপ্টের একটি ডাটা স্ট্রাকচার, যা key-value pair আকারে ডাটা সংরক্ষণ করতে ব্যবহৃত হয়। এটি যেকোনো ধরনের কী (string, object, function, ইত্যাদি) ব্যবহার করতে পারে এবং কী-ভ্যালু সংরক্ষণের ক্রম ঠিক রাখে।
+                  
+                  এখানে বেশ কয়েক ধরনের কাজ করা যায়। 
+                  </td>
+                  <td>
+                    let map = new Map();
+                    মান সেট করা 
+                    map.set("name", "Tanvir"); <br>
+                    মান পড়া
+                    console.log(map.get("name")); <br>আউটপুট: Tanvir</td>
+              </tr>
+              <tr>
+                  <td> Set</td>
+                  <td>Set হলো জাভাস্ক্রিপ্টের একটি ডাটা স্ট্রাকচার, যা একাধিক unique values সংরক্ষণ করে। এতে কোনো ডুপ্লিকেট মান রাখা সম্ভব নয়।</td>
+                  <td> Set তৈরি
+                    let set = new Set([1, 2, 3, 3, 4]); <br>
+                    
+                    মান যোগ করা
+                    set.add(5); <br>
+                    
+                    মান মুছে ফেলা
+                    set.delete(2);</td>
+              </tr>
+              
+          </tbody>
+      </table>
+        <table class="table-3">
+          <thead>
+            <tr>
+              <th colspan="3">Variable Declaration</th></tr>
+              <tr>
+                  <th>Variable Type</th>
+                  <th>Description</th>
+                  <th>Example</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>var</td>
+                  <td>জাভাস্ক্রিপ্টের প্রাচীনতম ভেরিয়েবল ডিক্লারেশন কীওয়ার্ড ছিলো এটি।  ES6 (ECMAScript 2015) এর আগে var ব্যবহারের প্রচলন ছিলো। বর্তমানে তেমন ব্যবহৃত হয় না।  এর বৈশিষ্ট্য হলোঃ 
+                  <br>
+                <li>  Function Scope: এটি শুধুমাত্র সেই ফাংশনের মধ্যে সীমাবদ্ধ যেখানে এটি ডিক্লার করা হয়েছে।
+
+                </li>
+                <li>
+                  Re-declaration: একই ব্লকের মধ্যে var ভেরিয়েবল আবার ডিক্লার করা যায়।
+                </li>
+                  </td>
+                  <td> Var দিয়ে ভেরিয়েবল ডিক্লারেশন 
+                  <br>
+                  var name = "Tanvir";
+                  console.log(name); <br> 
+                  আউটপুট: Tanvir
+                  </td>
+              </tr>
+              <tr>
+                  <td>Let
+                    </td>
+                  <td>let হলো ES6 থেকে প্রবর্তিত একটি ভেরিয়েবল ডিক্লারেশন কীওয়ার্ড। এটি var এর তুলনায় আরও নিরাপদ এবং উন্নত। এর বৈশিষ্ট্য হলোঃ
+                    <li>Block Scope: এটি কেবলমাত্র সেই ব্লকের মধ্যে সীমাবদ্ধ যেখানে এটি ডিক্লার করা হয়েছে।
+                    </li>
+                    <li>
+                    Re-declaration: একই স্কোপে পুনরায় ডিক্লার করা যায় না।
+                    </li>
+                  </td>
+                  <td>
+                    let দিয়ে ভেরিয়েবল ডিক্লারেশন let age = 25; <br> 
+                    console.log(age); <br>
+                    আউটপুট: 25
+                  </td>
+              </tr>
+              <tr>
+                  <td>const
+                    </td>
+                  <td>const হলো এমন ভেরিয়েবল ডিক্লারেশন, যা একবার ডিক্লার করার পর পুনরায় মান পরিবর্তন করা যায় না। এটি সাধারণত কনস্ট্যান্ট ভ্যালু সংরক্ষণের জন্য ব্যবহৃত হয়।এর বৈশিষ্ট্য হলোঃ
+                    <li>Block Scope: এটি কেবলমাত্র সেই ব্লকের মধ্যে সীমাবদ্ধ।
+                    </li>
+                    <li>
+                      Immutable: মান পুনরায় পরিবর্তন করা যায় না।
+                    </li>
+                  
+                  </td>
+                  <td>const দিয়ে ভেরিয়েবল ডিক্লারেশন <br>
+                    const pi = 3.1416;
+                    console.log(pi); <br>
+                    আউটপুট: 3.1416</td>
+              </tr>
+
+              
+          </tbody>
+      </table>
+      </div>
+      </section>
+    </body>
+  </html>
